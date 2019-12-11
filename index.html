@@ -20,59 +20,67 @@
 </head>
 <body>
 
-  <div class="wrapper">
-    <h1>Our Pricing</h1>
-    <div class="wrapper-toggle flex center">
-      <p>Annually</p>
-      <p>Monthly</p>
-    </div>
+  <div class="wrapper-background">
+    <div class="wrapper-content">
+      <h1>Our Pricing</h1>
+      <div class="wrapper-toggle flex center">
+        <p>Annually</p>
+        <label class="switch" aria-label="Change pricing toggle">
+          <input id="price-toggle" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <p>Monthly</p>
+      </div>
 
-    <div class="wrapper-card-basic">
-      <h2>Basic</h2>
-      <h3><span>&dollar;</span>19.99</h3>
-      <!-- <h3><span>&dollar;</span>199.99</h3> -->
-      <hr>
-      <p>500 GB Storage</p>
-      <hr>
-      <p>2 Users Allowed</p>
-      <hr>
-      <p>Send up to 3 GB</p>
-      <hr>
-      <button>Learn More</button>
-    </div>
+      <div class="wrapper-cards flex center">
+        <div class="wrapper-card-basic wrapper-card">
+          <h2>Basic</h2>
+          <h3><span class="dollar">&dollar;</span><span id="basic-price">19.99</span></h3>
+          <!-- <h3><span>&dollar;</span>199.99</h3> -->
+          <hr>
+          <p>500 GB Storage</p>
+          <hr>
+          <p>2 Users Allowed</p>
+          <hr>
+          <p>Send up to 3 GB</p>
+          <hr>
+          <button class="button-primary button-1" aria-label="Learn more">Learn More</button>
+        </div>
 
-    <div class="wrapper-card-professional">
-      <h2>Professional</h2>
-      <h3><span>&dollar;</span>24.99</h3>
-      <!-- <h3><span>&dollar;</span>249.99</h3> -->
-      <hr>
-      <p>1 TB Storage</p>
-      <hr>
-      <p>5 Users Allowed</p>
-      <hr>
-      <p>Send up to 10 GB</p>
-      <hr>
-      <button>Learn More</button>
+        <div class="wrapper-card-professional wrapper-card">
+          <h2>Professional</h2>
+          <h3><span class="dollar">&dollar;</span><span id="professional-price">24.99</span></h3>
+          <!-- <h3><span>&dollar;</span>249.99</h3> -->
+          <hr>
+          <p>1 TB Storage</p>
+          <hr>
+          <p>5 Users Allowed</p>
+          <hr>
+          <p>Send up to 10 GB</p>
+          <hr>
+          <button class="button-primary button-2" aria-label="Learn more">Learn More</button>
+        </div>
+        <div class="wrapper-card-master wrapper-card">
+          <h2>Master</h2>
+          <h3><span class="dollar">&dollar;</span><span id="master-price">39.99</span></h3>
+          <!-- <h3><span>&dollar;</span>399.99</h3> -->
+          <hr>
+          <p>2 TB Storage</p>
+          <hr>
+          <p>10 Users Allowed</p>
+          <hr>
+          <p>Send up to 20 GB</p>
+          <hr>
+          <button class="button-primary button-1" aria-label="Learn more">Learn More</button>
+        </div>
+      </div>
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Daniel Gibson</a>.
+      </div>
     </div>
-    <div class="wrapper-card-master">
-      <h2>Master</h2>
-      <h3><span>&dollar;</span>39.99</h3>
-      <!-- <h3><span>&dollar;</span>399.99</h3> -->
-      <hr>
-      <p>2 TB Storage</p>
-      <hr>
-      <p>10 Users Allowed</p>
-      <hr>
-      <p>Send up to 20 GB</p>
-      <hr>
-      <button>Learn More</button>
-    </div>
-    
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-
   </div>
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
